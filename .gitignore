@@ -1,0 +1,4 @@
+*.swp
+tmp_dir
+venv
+.DS_Store
