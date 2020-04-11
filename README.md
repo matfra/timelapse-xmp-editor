@@ -1,5 +1,5 @@
-# timelapse-xmp-editor (WIP, not ready for use)
-This tool allows you to generate xmp files with gradual development settings to a set of pictures in order to make beautiful timelapses with varying lighting conditions (typically during sunrise and sunset)
+# timelapse-xmp-editor
+This tool allows you to generate xmp files with gradual development settings (interpolation) to a set of pictures in order to make beautiful timelapses with varying lighting conditions (typically during sunrise and sunset)
 
 ## Requirements
 - python3
