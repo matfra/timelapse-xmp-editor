@@ -22,13 +22,15 @@ parser.add_argument(
 
 
 def get_filespath_in_dir_with_extension(directory, extension):
-    return glob.glob(os.path.join(directory, "*.{}".format(extension)))
+    results = glob.glob(os.path.join(directory, "*.{}".format(extension)))
+    results.sort()
+    return results
 
 
 def write_xmp_file(xmp, outfile_path):
     print("Writing file: {}".format(outfile_path))
-    if os.path.exists(outfile_path):
-        raise FileExistsError("Not overwriting existing file".format(outfile_path))
+    # if os.path.exists(outfile_path):
+    #     raise FileExistsError("Not overwriting existing file {}".format(outfile_path))
     with open(outfile_path, "w") as outfile:
         for line in xmp:
             outfile.write(line)
